@@ -156,11 +156,6 @@ withCallback:(RCTResponseSenderBlock) callback
     [emailAddreses addObject:email];
   }
   //end emails
-
-  [contact setObject: emailAddreses forKey:@"emailAddresses"];
-
-  [contact setObject: [self getABPersonThumbnailFilepath:person] forKey:@"thumbnailPath"];
-
   return contact;
 }
 
